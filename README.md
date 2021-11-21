@@ -4,12 +4,19 @@ Sins provides a full pipeline which is easy to use.
 Here are some tutorials about how to use the plugins in each dcc.
 
 [Hiero](hiero/readme.md)
+
 [Maya](maya/readme.md)
+
 [Nuke](nuke/readme.md)
+
 [Houdini](houdini/readme.md)
+
 [Katana](katana/readme.md)
+
 [RV](rv/readme.md)
+
 [Blender](blender/readme.md)
+
 [Unreal](unreal/readme.md)
 
 
@@ -21,7 +28,7 @@ Here's a complete workflow of the process from asset modeling to shot comp.
       After review pass, [Submit mod](maya/readme.md#mod). You can also use usd to combine an asset based on components.
       Before this, you may [Export component](maya/readme.md#component).
     * Do rigging and [Submit rig](maya/readme.md#rig).
-    * [Import mod in katana](katana/readme.md#initialize). 
+    * [Import mod in katana](katana/readme.md#initialize). You can also [Create variant and switch](katana/readme.md#create-and-switch-variants) in katana.
       Do lookdev and [Export lookfile in katana](katana/readme.md#publish-lookdev).
       The usd material can be view in maya via GL(Hydra) viewport. If you use arnold for material, it can also be seen in Arnold(Hydra).
     * [Import mod usd in maya](maya/readme.md#usd-tools) and do layout for set asset.
@@ -39,8 +46,8 @@ Here's a complete workflow of the process from asset modeling to shot comp.
     * [Initializate scene in houdini](houdini/readme.md#initialize).
     * Do pyro or dynamic simulation in houdini and [Submit flipbook](houdini/readme.md).
     * After review pass, [Export and submit efx cache](houdini/readme.md).
-    * [Import pre-lgt in katana](maya/readme.md#import-shots) and do lighting. [Render from katana](katana/readme.md#render).
-      You can also [Export light from katana](katana/readme.md#publish-light), which can be used in maya and view.
+    * [Import pre-lgt in katana](katana/readme.md#initialize) and do lighting. [Render from katana](katana/readme.md#render).
+      You can also [Export light from katana](katana/readme.md#publish-light), which can be import back in maya and view.
     * [Import lgt images in nuke](nuke/readme.md) and do comp. [Render from nuke](nuke/readme.md) and [Submit](nuke/readme.md).
-    * After any versions submit to Sins, you can [Review in rv](rv/readme.md).
+    * After any versions submit to Sins with preview, you can [Review in rv](rv/readme.md).
 

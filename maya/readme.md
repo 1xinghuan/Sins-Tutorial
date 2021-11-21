@@ -128,18 +128,77 @@ By default, it will be export as one.
 
 ### ani
 
+The animation publish window will show all referenced assets and their variants.
+Current variant is selected to be exported.
+
+![Sins](screenshot/ani01.png)
+
+After publish, you will get a shot ani usd file which contain the animation data and lookdev data.
+
+![Sins](screenshot/ani02.png)
+
+Here I add lok variants into asset variant.
+
+![Sins](screenshot/ani03.png)
+
+The exported animation will also have correct material.
+
+![Sins](screenshot/ani04.png)
+
 ### cam
 
 ## Usd Tools
 
 ### Create usd shots
 
-### Usd init
+This will create default usd files for steps in 'usdShotLayerStack' preset.
+You should do this before shot work.
+The base shot usd file will be used as base layer in other shots.
+So you can do some base layout in base shot, and it will also show in other shots.
+
+For example, I import a set asset in s01(base shot of s02, s03 and s04) in lay task.
+
+![Sins](screenshot/usdshots01.png)
+
+After publish, I pull from s02. The asset is also here.
+Then I can do some override in current shot. The final layout result of s02 will have the override changes.
+
+![Sins](screenshot/usdshots02.png)
 
 ### Usd pull
 
+You can get the latest usd file of current asset(set) or shot.
+
+* Asset level
+
+    You should use this tool in a lay task. First time you will get an empty scene.
+    
+    ![Sins](screenshot/usd_pull01.png)
+
+* Shot level
+
+    You can use this in any step(in 'usdShotLayerStack' preset).
+
+    It will get published files of all steps, which means the final result of shot(at current time).
+
+You can import other assets post-lok usd file and do layout.
+
+It's recommend to use UsdNodeGraph to import other assets because it will add some useful attribute.
+
+![Sins](screenshot/usd_pull02.png)
+
+
+### Usd init
+
+After open work file, you just need to use this tool to set the edit layer.
+Otherwise, you may work in a wrong layer.
+
 ### Usd commit
 
+After editing the usd stage, use this tool to save the changes.
+
 ### Usd push
+
+Use this tool and publish the usd stage changes.
 
 
